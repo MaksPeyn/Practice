@@ -1,0 +1,15 @@
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\bin\Debug\Практика Кошки - мышки.exe.config
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\bin\Debug\Практика Кошки - мышки.exe
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\bin\Debug\Практика Кошки - мышки.pdb
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика Кошки - мышки.csprojResolveAssemblyReference.cache
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\MainWindow.g.cs
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\App.g.cs
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика Кошки - мышки_MarkupCompile.cache
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика Кошки - мышки_MarkupCompile.lref
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\MainWindow.baml
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика Кошки - мышки.g.resources
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика_Кошки___мышки.Properties.Resources.resources
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика Кошки - мышки.csproj.GenerateResource.Cache
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика Кошки - мышки.exe
+C:\Users\Максим\Documents\Visual Studio 2015\Projects\Практика Кошки - мышки\Практика Кошки - мышки\obj\Debug\Практика Кошки - мышки.pdb

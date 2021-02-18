@@ -1,0 +1,51 @@
+﻿<Window x:Class="Практика_Кошки___мышки.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практика_Кошки___мышки"
+        mc:Ignorable="d"
+        Title="Экосистема кошачьего острова" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <local:BoolToVisibilityConverter x:Key="Converter"/>
+    </Window.Resources>
+    <StackPanel Margin="10">
+        <StackPanel Visibility="{Binding NVis, Converter={StaticResource ResourceKey=Converter}}">
+            <TextBlock Text="Введите размеры поля(N*M):"/>
+            <TextBox TextAlignment="Center" Text="{Binding N}"/>
+            <TextBox TextAlignment="Center" Text="{Binding M}"/>
+            <Button Content="Сохранить" Command="{Binding SizeCommand, Mode=OneTime}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Visibility="{Binding BVis, Converter={StaticResource ResourceKey=Converter}}">
+                <TextBlock Text="Начальное время жизни:"/>
+                <TextBox TextAlignment="Center" Text="{Binding Life}"/>
+                <TextBlock Text="Энергетическая ценность мыши(в ходах):" Margin="0,5,0,0"/>
+                <TextBox TextAlignment="Center" Text="{Binding Eat}"/>
+                <TextBlock Text="Длительность метки кота:" Margin="0,5,0,0"/>
+                <TextBox TextAlignment="Center" Text="{Binding TimeP}"/>
+                <TextBlock Text="Вероятность размножения мыши(1/х):" Margin="0,5,0,0"/>
+                <TextBox TextAlignment="Center" Text="{Binding BornM}"/>
+                <Button Content="Изменить данные!" Command="{Binding ModifyCommand, Mode=OneTime}" Margin="0,5,0,0"/>
+            </StackPanel>
+            <DataGrid ItemsSource="{Binding Adv}" Margin="5,0,5,0" HeadersVisibility="None" RowHeight="40" ColumnWidth="50" SelectionMode="Single" x:Name="DataGrid" SelectionUnit="Cell" IsReadOnly="True" Visibility="{Binding Vis, Converter={StaticResource ResourceKey=Converter}}"/>
+            <StackPanel Visibility="{Binding BVis, Converter={StaticResource ResourceKey=Converter}}">
+                <TextBlock Text="Количество кошек:"/>
+                <TextBox TextAlignment="Center" Text="{Binding CatW}"/>
+                <TextBlock Text="Количество котов:" Margin="0,5,0,0"/>
+                <TextBox TextAlignment="Center" Text="{Binding Cat}"/>
+                <TextBlock Text="Количество мышей:" Margin="0,5,0,0"/>
+                <TextBox TextAlignment="Center" Text="{Binding Mouse}"/>
+                <Button Content="Добавить!" Command="{Binding GenCommand, Mode=OneTime}" Margin="0,5,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+            <Button Content="{Binding Button}" Visibility="{Binding Vis, Converter={StaticResource ResourceKey=Converter}}" Command="{Binding GoShagCommand, Mode=OneTime}" Width="150" Height="40" Margin="0,0,10,0"/>
+            <Button Content="Поехали!" Visibility="{Binding Vis, Converter={StaticResource ResourceKey=Converter}}" Command="{Binding GoCommand, Mode=OneTime}" Width="60"/>
+            <Button Content="Один ход!" Visibility="{Binding BVis, Converter={StaticResource ResourceKey=Converter}}" Command="{Binding IterCommand, Mode=OneTime}" Margin="10,0,10,0"/>
+            <Button Content="Сохранить!" Visibility="{Binding BVis, Converter={StaticResource ResourceKey=Converter}}" Command="{Binding SaveCommand, Mode=OneTime}"/>
+            <Button Content="Загрузить!" Visibility="{Binding BVis, Converter={StaticResource ResourceKey=Converter}}" Command="{Binding LoadCommand, Mode=OneTime}" Margin="10,0,10,0"/>
+            <Button Content="Очистить!" Visibility="{Binding BVis, Converter={StaticResource ResourceKey=Converter}}" Command="{Binding ClearCommand, Mode=OneTime}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
